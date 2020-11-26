@@ -1,5 +1,7 @@
-file2=factorial.sh
-file1=file.sh
+file1=first.sh
+file2=second.sh
 new=obtained.sh
-head -n 9 $file1 | tail -n -5 > $new
-head -n 10 $file2 | tail -n -6 >> $new
+head -n 5 $file1  > $new
+head -n 15 $file2 | tail -n -8 >> $new
+echo " The contents of the file is : " 
+cat $new
